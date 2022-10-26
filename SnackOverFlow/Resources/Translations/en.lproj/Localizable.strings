@@ -1,0 +1,37 @@
+//general
+"appName" = "SnackOverFlow";
+
+//button
+
+"getStarted"= "Get started";
+
+
+// onboarding
+"onboarding1" = "Hand-pickle high quality snacks.";
+"onboarding2" = "Shop global. Mind-blownly affordable.";
+"onboarding3" = "Deliver on the\npromise of time.";
+
+//sing-in
+
+"signInNormal" = "Sign up with Email";
+
+// login
+
+"createAccount" = "Create account";
+"agreementText" = "By clicking 'Create account', I agree to SnackOverflow’s TOS and Privacy Policy.";
+
+
+// main
+
+"home" = "Home";
+"market" = "Market";
+"create" = "Create";
+"wishlist" = "Wishlist";
+"account" = "Account";
+
+// home
+
+"recentUserBundles" = "Recent users' bundles";
+
+
+

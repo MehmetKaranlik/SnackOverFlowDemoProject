@@ -1,0 +1,109 @@
+//
+//  PrimaryButton.swift
+//  SnackOverFlow
+//
+//  Created by mehmet karanlık on 14.10.2022.
+//
+
+import SwiftUI
+
+struct PrimaryButton: View {
+   let action: () -> Void
+   let label: String
+   let icon : ImageAsset?
+   let isDisabled : Bool
+
+   init(action: @escaping () -> Void, label: String) {
+      self.action = action
+      self.label = label
+      self.icon = nil
+      self.isDisabled = false
+   }
+
+   init(action: @escaping () -> Void, label: String, icon : ImageAsset?) {
+      self.action = action
+      self.label = label
+      self.icon = icon
+      self.isDisabled = false
+   }
+
+   init (action: @escaping () -> Void, label: String, icon : ImageAsset?, disabled : Bool) {
+      self.action = action
+      self.label = label
+      self.icon = icon
+      self.isDisabled = disabled
+   }
+
+   var body: some View {
+      Button(action: action) {
+         HStack {
+            if let icon {
+               icon.swiftUIImage
+                  .renderingMode(.template)
+            }
+            ProductText.headline(label)
+         }
+         .foregroundColor(Asset.Colors.white.swiftUIColor)
+      }
+      .buttonStyle(PrimaryButtonStyle(isDisabled: isDisabled))
+      .disabled(isDisabled)
+
+   }
+}
+
+struct PrimaryButton_Previews: PreviewProvider {
+   static var previews: some View {
+      SecondaryButton(
+         action: {},
+         label: "Primary button with icon",
+         icon: Asset.Images.Icons.add,
+         disabled: false
+      )
+   }
+}
+
+private struct PrimaryButtonStyle: ButtonStyle {
+   let  isDisabled : Bool
+   func makeBody(configuration: Configuration) -> some View {
+      configuration.label
+         .frame(idealWidth: UIScreen.main.bounds.width, maxWidth: UIScreen.main.bounds.width)
+         .modifier(
+            StateModifier(
+               isDisabled: isDisabled,
+               isPressed: configuration.isPressed
+            )
+         )
+
+
+   }
+
+}
+
+
+
+private struct StateModifier: ViewModifier {
+   let isDisabled : Bool
+   let isPressed : Bool
+   func body(content: Content) -> some View {
+      if isDisabled {
+         content
+            .padding()
+            .background(Asset.Colors.peach.swiftUIColor)
+            .cornerRadius(RadiusItems.radiusXs)
+            .frame(height: 56)
+            .opacity(0.7)
+            .foregroundColor(Asset.Colors.white.swiftUIColor)
+      }else {
+         content
+            .padding()
+            .background(Asset.Colors.peach.swiftUIColor)
+            .cornerRadius(RadiusItems.radiusXs)
+            .frame(height: 56)
+            .scaleEffect(isPressed ? 0.97 : 1)
+            .brightness(isPressed ? -0.07 : 0)
+            .foregroundColor(Asset.Colors.white.swiftUIColor)
+
+      }
+
+   }
+}
