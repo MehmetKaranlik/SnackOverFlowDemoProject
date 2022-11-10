@@ -87,6 +87,7 @@ internal enum Asset {
       internal static let onboarding2 = ImageAsset(name: "Onboarding-2")
       internal static let onboarding3 = ImageAsset(name: "Onboarding-3")
       internal static let banner = ImageAsset(name: "banner")
+      internal static let tea = ImageAsset(name: "tea")
     }
   }
 }

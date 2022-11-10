@@ -16,6 +16,9 @@ internal enum L10n {
   internal static let agreementText = L10n.tr("Localizable", "agreementText", fallback: "By clicking 'Create account', I agree to SnackOverflow’s TOS and Privacy Policy.")
   /// SnackOverFlow
   internal static let appName = L10n.tr("Localizable", "appName", fallback: "SnackOverFlow")
+  /// Good afternoon.
+  /// Take a break from work.
+  internal static let bannerText = L10n.tr("Localizable", "bannerText", fallback: "Good afternoon.\nTake a break from work.")
   /// Create
   internal static let create = L10n.tr("Localizable", "create", fallback: "Create")
   /// Create account
