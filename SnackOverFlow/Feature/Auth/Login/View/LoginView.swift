@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StackNavigator
 
 struct LoginView: View {
    @State var email = ""
@@ -31,7 +32,7 @@ struct LoginView: View {
              .padding(.horizontal,SpacingItems.spacingXxl)
              .padding(.vertical,SpacingItems.spacingM)
           PrimaryButton(action: {
-             navigationHandler.replaceRoot(name: NavigationPaths.Names.main)
+             navigationHandler.replaceRoot(with: Routes.main)
           }, label: L10n.createAccount)
           .padding(.horizontal,SpacingItems.spacingM)
           Spacer()
@@ -42,6 +43,9 @@ struct LoginView: View {
           Spacer()
 
        }
+       .background(.white)
+      
+
 
     }
 }

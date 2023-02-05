@@ -19,6 +19,8 @@
 
 "createAccount" = "Create account";
 "agreementText" = "By clicking 'Create account', I agree to SnackOverflow’s TOS and Privacy Policy.";
+"email" = "Email";
+"password" = "Password"; 
 
 
 // main

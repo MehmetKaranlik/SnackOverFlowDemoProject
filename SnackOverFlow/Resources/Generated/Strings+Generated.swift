@@ -23,6 +23,8 @@ internal enum L10n {
   internal static let create = L10n.tr("Localizable", "create", fallback: "Create")
   /// Create account
   internal static let createAccount = L10n.tr("Localizable", "createAccount", fallback: "Create account")
+  /// Email
+  internal static let email = L10n.tr("Localizable", "email", fallback: "Email")
   /// Get started
   internal static let getStarted = L10n.tr("Localizable", "getStarted", fallback: "Get started")
   /// Home
@@ -36,6 +38,8 @@ internal enum L10n {
   /// Deliver on the
   /// promise of time.
   internal static let onboarding3 = L10n.tr("Localizable", "onboarding3", fallback: "Deliver on the\npromise of time.")
+  /// Password
+  internal static let password = L10n.tr("Localizable", "password", fallback: "Password")
   /// Recent users' bundles
   internal static let recentUserBundles = L10n.tr("Localizable", "recentUserBundles", fallback: "Recent users' bundles")
   /// Sign up with Email

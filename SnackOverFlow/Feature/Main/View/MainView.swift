@@ -12,16 +12,22 @@ struct MainView: View {
     var body: some View {
        TabView(selection: $selectedIndex) {
           ForEach(DataProvider.tabItems) { item in
-             item.page.view
+             item.page.toItem().view
                 .tabItem {
                    item.image.swiftUIImage
                       .renderingMode(.template)
                    ProductText.small(item.title)
+
                 }
-                .tag(DataProvider.tabItems.firstIndex(where: {$0 == item}))
+                .tag(DataProvider.tabItems.firstIndex(of: item))
+                .onAppear {
+                   print(DataProvider.tabItems.firstIndex(of: item))
+                }
           }
+
        }
        .accentColor(Asset.Colors.peach.swiftUIColor)
+
 
     }
 }
@@ -35,11 +41,11 @@ struct MainView_Previews: PreviewProvider {
 
 private struct DataProvider {
    static let tabItems : [CustomMainTabItem] = [
-      .init(title: L10n.home, image: Asset.Images.Icons.home, page: NavigationPaths.findRouteByName(NavigationPaths.Names.empty)),
-      .init(title: L10n.market, image: Asset.Images.Icons.market, page: NavigationPaths.findRouteByName(NavigationPaths.Names.market)),
-      .init(title: L10n.create, image: Asset.Images.Icons.create, page: NavigationPaths.findRouteByName(NavigationPaths.Names.empty)),
-      .init(title: L10n.wishlist, image: Asset.Images.Icons.wishlist, page: NavigationPaths.findRouteByName(NavigationPaths.Names.empty)),
-      .init(title: L10n.account, image: Asset.Images.Icons.user, page: NavigationPaths.findRouteByName(NavigationPaths.Names.empty)),
+      .init(title: L10n.home, image: Asset.Images.Icons.home, page: Routes.home),
+      .init(title: L10n.market, image: Asset.Images.Icons.market, page: Routes.market),
+      .init(title: L10n.create, image: Asset.Images.Icons.create, page:Routes.empty),
+      .init(title: L10n.wishlist, image: Asset.Images.Icons.wishlist, page:Routes.empty),
+      .init(title: L10n.account, image: Asset.Images.Icons.user, page:Routes.empty),
    ]
 
 }

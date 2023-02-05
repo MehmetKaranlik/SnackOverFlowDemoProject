@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-
+import StackNavigator
 @main
 struct SnackOverFlowApp: App {
     var body: some Scene {
         WindowGroup {
-         NavigationContainer()
+           AppBuilder(initial: Routes.onboarding.toItem())
         }
     }
 

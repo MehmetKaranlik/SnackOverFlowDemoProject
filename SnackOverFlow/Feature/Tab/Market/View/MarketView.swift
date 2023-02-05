@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StackNavigator
 
 struct MarketView: View {
    @State var searchText : String = ""
@@ -36,6 +37,7 @@ struct MarketView_Previews: PreviewProvider {
 
 struct SearchTextField: View {
    @Binding var searchText : String
+   @EnvironmentObject var navmanager : NavigationHandler
    var body: some View {
       HStack {
          Asset.Images.Icons.search.swiftUIImage
@@ -43,6 +45,9 @@ struct SearchTextField: View {
             .foregroundColor(Asset.Colors.clooney.swiftUIColor)
 
          TextField("Search", text: $searchText)
+            .onTapGesture {
+               navmanager.push(destionation: Routes.empty)
+            }
 
       }
       .padding(.horizontal, SizeItems.small)

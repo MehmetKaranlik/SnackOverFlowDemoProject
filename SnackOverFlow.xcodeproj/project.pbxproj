@@ -17,6 +17,9 @@
 		463AB6DC2901D6E400B81027 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463AB6DB2901D6E400B81027 /* PriceView.swift */; };
 		463AB6DE2901D84400B81027 /* BundleBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463AB6DD2901D84400B81027 /* BundleBanner.swift */; };
 		469064F5291D915B001154AD /* HeroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469064F4291D915B001154AD /* HeroCard.swift */; };
+		469064F7291D9AED001154AD /* CarouselLargeSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469064F6291D9AED001154AD /* CarouselLargeSimple.swift */; };
+		46BD13AE29904689007A6724 /* StackNavigator in Frameworks */ = {isa = PBXBuildFile; productRef = 46BD13AD29904689007A6724 /* StackNavigator */; };
+		46BD13B2299046C0007A6724 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BD13B1299046C0007A6724 /* Routes.swift */; };
 		46CFB0C62909F61300A7E878 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFB0C52909F61300A7E878 /* HomeView.swift */; };
 		46E32F402909E9D40060A0AC /* CarouselSmallAdvanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E32F3F2909E9D40060A0AC /* CarouselSmallAdvanced.swift */; };
 		46E32F432909EABA0060A0AC /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E32F422909EABA0060A0AC /* AppConstants.swift */; };
@@ -55,10 +58,6 @@
 		46F16B3828FA20D6001708F6 /* SizeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F16B3728FA20D6001708F6 /* SizeItems.swift */; };
 		46F16B4128FB0BF8001708F6 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F16B4028FB0BF8001708F6 /* SignInView.swift */; };
 		46F16B4328FB0E0E001708F6 /* SpecialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F16B4228FB0E0E001708F6 /* SpecialLoginButton.swift */; };
-		46F16B5328FB5DFB001708F6 /* PageRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F16B5228FB5DFB001708F6 /* PageRoute.swift */; };
-		46F16B5528FB5E17001708F6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F16B5428FB5E17001708F6 /* Router.swift */; };
-		46F16B5728FB5E45001708F6 /* NavigationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F16B5628FB5E45001708F6 /* NavigationHandler.swift */; };
-		46F16B5928FB60E6001708F6 /* NavigationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F16B5828FB60E6001708F6 /* NavigationContainer.swift */; };
 		46F16B5F28FB6CA4001708F6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F16B5E28FB6CA4001708F6 /* LoginView.swift */; };
 		46F16B6228FB7077001708F6 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F16B6128FB7077001708F6 /* UITextField.swift */; };
 		46F16B6428FB7B26001708F6 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F16B6328FB7B26001708F6 /* EmailTextField.swift */; };
@@ -76,6 +75,8 @@
 		463AB6DB2901D6E400B81027 /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
 		463AB6DD2901D84400B81027 /* BundleBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleBanner.swift; sourceTree = "<group>"; };
 		469064F4291D915B001154AD /* HeroCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCard.swift; sourceTree = "<group>"; };
+		469064F6291D9AED001154AD /* CarouselLargeSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselLargeSimple.swift; sourceTree = "<group>"; };
+		46BD13B1299046C0007A6724 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		46CFB0C52909F61300A7E878 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		46E32F3F2909E9D40060A0AC /* CarouselSmallAdvanced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSmallAdvanced.swift; sourceTree = "<group>"; };
 		46E32F422909EABA0060A0AC /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
@@ -116,10 +117,6 @@
 		46F16B3728FA20D6001708F6 /* SizeItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeItems.swift; sourceTree = "<group>"; };
 		46F16B4028FB0BF8001708F6 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		46F16B4228FB0E0E001708F6 /* SpecialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLoginButton.swift; sourceTree = "<group>"; };
-		46F16B5228FB5DFB001708F6 /* PageRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRoute.swift; sourceTree = "<group>"; };
-		46F16B5428FB5E17001708F6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		46F16B5628FB5E45001708F6 /* NavigationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHandler.swift; sourceTree = "<group>"; };
-		46F16B5828FB60E6001708F6 /* NavigationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationContainer.swift; sourceTree = "<group>"; };
 		46F16B5E28FB6CA4001708F6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		46F16B6128FB7077001708F6 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		46F16B6328FB7B26001708F6 /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
@@ -131,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BD13AE29904689007A6724 /* StackNavigator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +231,14 @@
 			path = Hero;
 			sourceTree = "<group>";
 		};
+		46BD13AF299046B2007A6724 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				46BD13B1299046C0007A6724 /* Routes.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		46CFB0C32909F60800A7E878 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				46E32F3F2909E9D40060A0AC /* CarouselSmallAdvanced.swift */,
+				469064F6291D9AED001154AD /* CarouselLargeSimple.swift */,
 			);
 			path = Carousel;
 			sourceTree = "<group>";
@@ -569,19 +576,9 @@
 		46F16B4528FB4307001708F6 /* Init */ = {
 			isa = PBXGroup;
 			children = (
-				46F16B4728FB4310001708F6 /* Navigation */,
+				46BD13AF299046B2007A6724 /* Navigation */,
 			);
 			path = Init;
-			sourceTree = "<group>";
-		};
-		46F16B4728FB4310001708F6 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				46F16B5128FB5DE6001708F6 /* Handler */,
-				46F16B5028FB5DE0001708F6 /* Router */,
-				46F16B4F28FB5DD7001708F6 /* Model */,
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 		46F16B4928FB4351001708F6 /* Demo */ = {
@@ -589,31 +586,6 @@
 			children = (
 			);
 			path = Demo;
-			sourceTree = "<group>";
-		};
-		46F16B4F28FB5DD7001708F6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				46F16B5228FB5DFB001708F6 /* PageRoute.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		46F16B5028FB5DE0001708F6 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				46F16B5428FB5E17001708F6 /* Router.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		46F16B5128FB5DE6001708F6 /* Handler */ = {
-			isa = PBXGroup;
-			children = (
-				46F16B5628FB5E45001708F6 /* NavigationHandler.swift */,
-				46F16B5828FB60E6001708F6 /* NavigationContainer.swift */,
-			);
-			path = Handler;
 			sourceTree = "<group>";
 		};
 		46F16B5A28FB6C77001708F6 /* Login */ = {
@@ -675,6 +647,9 @@
 			dependencies = (
 			);
 			name = SnackOverFlow;
+			packageProductDependencies = (
+				46BD13AD29904689007A6724 /* StackNavigator */,
+			);
 			productName = SnackOverFlow;
 			productReference = 46F16AAC28F9A847001708F6 /* SnackOverFlow.app */;
 			productType = "com.apple.product-type.application";
@@ -703,6 +678,9 @@
 				Base,
 			);
 			mainGroup = 46F16AA328F9A847001708F6;
+			packageReferences = (
+				46BD13AC29904689007A6724 /* XCRemoteSwiftPackageReference "StackNavigator" */,
+			);
 			productRefGroup = 46F16AAD28F9A847001708F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -775,19 +753,16 @@
 				46E32F452909EB170060A0AC /* CardSizes.swift in Sources */,
 				4627AB2828FC8B55008850D6 /* MarketView.swift in Sources */,
 				46F16B6228FB7077001708F6 /* UITextField.swift in Sources */,
-				46F16B5328FB5DFB001708F6 /* PageRoute.swift in Sources */,
 				46F16AFF28F9F77A001708F6 /* SpacingItems.swift in Sources */,
 				463AB6DE2901D84400B81027 /* BundleBanner.swift in Sources */,
 				46F16AF628F9F567001708F6 /* Strings+Generated.swift in Sources */,
 				46F16B2C28FA1472001708F6 /* OnboardingView.swift in Sources */,
-				46F16B5728FB5E45001708F6 /* NavigationHandler.swift in Sources */,
 				4627AB2C28FC8E11008850D6 /* SnackBundleCard.swift in Sources */,
 				46F16B0A28F9FAD6001708F6 /* ProductText.swift in Sources */,
-				46F16B5928FB60E6001708F6 /* NavigationContainer.swift in Sources */,
 				46F16B0228F9F7A5001708F6 /* RadiusItems.swift in Sources */,
 				46F16B3428FA1B29001708F6 /* CustomTabItem.swift in Sources */,
-				46F16B5528FB5E17001708F6 /* Router.swift in Sources */,
 				46F16B6628FB7CFD001708F6 /* PasswordTextField.swift in Sources */,
+				46BD13B2299046C0007A6724 /* Routes.swift in Sources */,
 				46F16B4328FB0E0E001708F6 /* SpecialLoginButton.swift in Sources */,
 				469064F5291D915B001154AD /* HeroCard.swift in Sources */,
 				463AB6DA2901D44D00B81027 /* SnackBox.swift in Sources */,
@@ -797,6 +772,7 @@
 				46F16B0628F9F90C001708F6 /* Fonts+Generated.swift in Sources */,
 				463AB6DC2901D6E400B81027 /* PriceView.swift in Sources */,
 				463AB6D52901AE2400B81027 /* GridItem.swift in Sources */,
+				469064F7291D9AED001154AD /* CarouselLargeSimple.swift in Sources */,
 				46F16B6428FB7B26001708F6 /* EmailTextField.swift in Sources */,
 				463AB6D229019DBF00B81027 /* CustomMainTabItem.swift in Sources */,
 				46F16AB028F9A847001708F6 /* Main.swift in Sources */,
@@ -1024,6 +1000,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46BD13AC29904689007A6724 /* XCRemoteSwiftPackageReference "StackNavigator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MehmetKaranlik/StackNavigator.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46BD13AD29904689007A6724 /* StackNavigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46BD13AC29904689007A6724 /* XCRemoteSwiftPackageReference "StackNavigator" */;
+			productName = StackNavigator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46F16AA428F9A847001708F6 /* Project object */;
 }

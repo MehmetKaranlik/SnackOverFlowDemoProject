@@ -16,7 +16,7 @@ struct EmailTextField : View {
       HStack {
          Asset.Images.Icons.email.swiftUIImage
          CustomUIKitTextField(
-            text:$value, placeholder: "Email",
+            text:$value, placeholder: L10n.email,
             backgroundColor: Asset.Colors.whitey.color,
             foregroundColor: Asset.Colors.teflon.color
          )

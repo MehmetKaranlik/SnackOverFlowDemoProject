@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import StackNavigator
 
 struct CustomMainTabItem : Identifiable, Equatable {
    static func == (lhs: CustomMainTabItem, rhs: CustomMainTabItem) -> Bool {
@@ -15,6 +16,6 @@ struct CustomMainTabItem : Identifiable, Equatable {
    let id: UUID = UUID()
    let title : String
    let image : ImageAsset
-   let page : PageRoute
+   let page : any DeepRoutes
 
 }

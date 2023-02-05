@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StackNavigator
 
 struct SignInView: View {
    @EnvironmentObject var navigationHandler : NavigationHandler
@@ -26,7 +27,7 @@ struct SignInView: View {
              }
              .padding(.horizontal,SpacingItems.spacingXxl)
           SecondaryButton(action: {
-             navigationHandler.replaceRoot(name: NavigationPaths.Names.login)
+             navigationHandler.replaceRoot(with: Routes.main)
           }, label: L10n.signInNormal)
        }
        .padding(.horizontal,SpacingItems.spacingM)

@@ -14,7 +14,7 @@ struct PasswordTextField : View {
       HStack {
          Asset.Images.Icons.lock.swiftUIImage
          CustomUIKitTextField(
-            text:$value, placeholder: "Password",
+            text:$value, placeholder: L10n.password,
             backgroundColor: Asset.Colors.white.color,
             foregroundColor: Asset.Colors.teflon.color
          )

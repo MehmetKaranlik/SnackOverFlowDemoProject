@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StackNavigator
 
 struct OnboardingView: View {
    @ObservedObject var vm: OnboardingViewModel
@@ -22,12 +23,13 @@ struct OnboardingView: View {
          Spacer()
             .frame(height: 28)
          PrimaryButton(action: {
-            navigationHandler.replaceRoot(name: NavigationPaths.Names.signIn)
+            navigationHandler.replaceRoot(with: Routes.login)
          }, label: L10n.getStarted)
          .padding(.horizontal,SpacingItems.spacingM)
          .padding(.bottom, SpacingItems.spacingM )
 
       }
+      .background(.white)
    }
 }
 
@@ -51,7 +53,7 @@ struct TabsView: View {
             .tag(tabItem.tag)
          }
       }
-      .tabViewStyle(.page)
+      .tabViewStyle(.page(indexDisplayMode: .never))
    }
 }
 
